@@ -1,3 +1,5 @@
+
+
 *
 {
     margin: 0px;
@@ -6,21 +8,21 @@
 
 header
 {
-    background-color: black;
+    background-color: #0078d4;
     height: 8vh;
 }
 
 
 footer
 {
-    background-color: blue;
+    background-color: #0078d4;
     height: 5vh;
 }
 .container-main
 {
     min-height: calc(100vh - 8vh - 5vh);
     display: flex;
-    border: 4px solid green;
+    border: 1px solid #e6e6e6;
 }
 
 /* styling navbar */
@@ -43,10 +45,135 @@ nav ul li
 nav ul li a
 {
     text-decoration: none;
-    color: white;
+    color: #e6e6e6;
 }
 .search-box-nav
 {
     margin: 22px;
     
+}
+
+
+/* Container CSS */
+
+.container-main{
+    display: flex;
+    flex-direction: row;
+}
+
+#left_container{
+    width: 20vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(224, 214, 214, 0.89);
+}
+
+#right_container{
+    width: 70vw;
+    height: 100vh;
+    /* background-color: whitesmoke; */
+    display: flex;
+    flex-direction: column;
+}
+
+.top_left{
+    height: 10vh;
+    /* background-color: rgba(224, 214, 214, 0.89); */
+    border-bottom: 1px solid black;
+}
+.top_left i{
+    padding: 16px;
+    /* height: 70vh; */
+    /* width: 10vw; */
+    /* color: black; */
+}
+.middle_left{
+    height: 70vh;
+    /* background-color: rgba(224, 214, 214, 0.89); */
+    border-bottom: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+}
+.bottom_left{
+    height: 20vh;
+    /* background-color: rgba(224, 214, 214, 0.89); */
+}
+
+#heading_middle_left{
+    height: 7vh;
+    width: 100%;
+}
+#heading_middle_left:hover{
+    background-color: grey;
+}
+
+#myfiles{
+    height: 7vh;
+    width: 100%;
+}
+#myfiles:hover{
+    background-color: grey;
+}
+
+#recent{
+    height: 7vh;
+    width: 100%;
+}
+#recent:hover{
+    background-color: grey;
+}
+
+#photos{
+    height: 7vh;
+    width: 100%;
+}
+#photos:hover{
+    background-color: grey;
+}
+
+#share{
+    height: 7vh;
+    width: 100%;
+}
+#share:hover{
+    background-color: grey;
+}
+
+#recyle_bin{
+    height: 7vh;
+    width: 100%;
+}
+#recyle_bin:hover{
+    background-color: grey;
+}
+
+
+
+/* Right Container CSS */
+
+#right_head{
+    height: 10vh;
+    border-bottom: 1px solid black;
+    font-size: larger;
+}
+#right_head span:hover{
+    background-color: #0078d4;
+}
+
+#main_content{
+    height: 90vh;
+}
+
+.files_container{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.files_container img{
+    margin-left: 20px;
+    height: 160px;
+    width: 160px;
 }
